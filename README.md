@@ -1,4 +1,5 @@
-Microservice web app based on [Tutorial](https://testdriven.io/courses/microservices-with-docker-flask-and-react/)
+Microservice web app based on [tutorial](https://testdriven.io/courses/microservices-with-docker-flask-and-react/).
+
 Why? To get/improve practical skills.
 
 ### Services
