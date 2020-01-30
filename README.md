@@ -1,3 +1,4 @@
+## General
 Microservice web app based on [tutorial](https://testdriven.io/courses/microservices-with-docker-flask-and-react/).
 
 Why? To get/improve practical skills.
@@ -34,3 +35,15 @@ Why? To get/improve practical skills.
 8. Containerization
 9. Container Orchestration
 10. Serverless Architecture
+
+## HOW-TOs
+
+### How to deploy
+1. Switch to prod virtual machine
+  1. docker-machine env testdriven-prod3
+  2. $ eval $(docker-machine env testdriven-prod3)
+2. Re-build and up cotainers
+  1. docker-compose -f docker-compose-prod.yml up -d --build
+
+### Back to development env
+1. eval $(docker-machine env -u)
