@@ -1,5 +1,5 @@
 # Microservices with Docker, Flask, and React
-[![Build Status](https://travis-ci.org/ahumenetskyy/testdriven-app.svg?branch=master)](https://travis-ci.org/ahumenetskyy/testdriven-app)
+[![Build Status](https://travis-ci.org/ahumenetskyy/microservices-with-docker-flask-and-reac.svg?branch=master)](https://travis-ci.org/ahumenetskyy/microservices-with-docker-flask-and-reac)
 
 ## General
 Microservice web app based on [tutorial](https://testdriven.io/courses/microservices-with-docker-flask-and-react/).
