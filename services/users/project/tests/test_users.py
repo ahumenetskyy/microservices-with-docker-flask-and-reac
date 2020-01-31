@@ -1,6 +1,5 @@
 # services/users/project/tests/test_users.py
 
-
 import json
 import unittest
 
@@ -8,11 +7,13 @@ from project.tests.base import BaseTestCase
 from project import db
 from project.api.models import User
 
+
 def add_user(username, email):
     user = User(username=username, email=email)
     db.session.add(user)
     db.session.commit()
     return user
+
 
 class TestUserService(BaseTestCase):
     """Tests for the Users Service."""
@@ -104,6 +105,7 @@ class TestUserService(BaseTestCase):
             self.assertIn('michael', data['data']['username'])
             self.assertIn('michael@mherman.org', data['data']['email'])
             self.assertIn('success', data['status'])
+
     def test_single_user_no_id(self):
         """Ensure error is thrown if an id is not provided."""
         with self.client:
@@ -159,6 +161,7 @@ class TestUserService(BaseTestCase):
             self.assertNotIn(b'<p>No users!</p>', response.data)
             self.assertIn(b'michael', response.data)
             self.assertIn(b'fletcher', response.data)
+
     def test_main_add_user(self):
         """
         Ensure a new user can be added to the database via a POST request.
@@ -173,6 +176,7 @@ class TestUserService(BaseTestCase):
             self.assertIn(b'All Users', response.data)
             self.assertNotIn(b'<p>No users!</p>', response.data)
             self.assertIn(b'michael', response.data)
+
 
 if __name__ == '__main__':
     unittest.main()

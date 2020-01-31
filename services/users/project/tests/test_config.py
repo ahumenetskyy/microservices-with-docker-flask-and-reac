@@ -1,12 +1,11 @@
 # services/users/project/tests/test_config.py
 
-
 import os
 import unittest
 
 from flask import current_app
 from flask_testing import TestCase
-from project import create_app, db
+from project import create_app
 
 app = create_app()
 
